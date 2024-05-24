@@ -15,5 +15,14 @@
         <img src="imagen/foto-g.png" alt="Imagem Flexível">
     </picture>
         
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudio em HTML5.</p>
+    <audio src="midea/happy-mistake.mp3" controls autoplay></audio>
+    <audio preload="metadata" autoplay controls loop>
+        <source srcset="midea/happy-mistake.mp3" type="audio/mpeg">
+        <source srcset="midea/happy-mistake.ogg" type="audio/ogg">
+        <source srcset="midea/happy-mistake.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio <a href="midea/happy-mistake.mp3">Clique aqui para baíxar o arquivo MP3</a></p>
+    </audio>
 </body>
 </html>
