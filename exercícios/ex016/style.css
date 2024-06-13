@@ -18,13 +18,13 @@ main{
 }
 
 h1{
-    color: #F39209;
+    color: #09f363;
     text-align: center;
-    text-shadow: 1px 1px 2px #794c0f;
+    text-shadow: 1px 1px 2px #30291f;
 }
 
 h2{
-    color: #125189;
+    color: #124689;
 }
 
 p {
@@ -33,4 +33,5 @@ p {
 }
 img{
     width: 35px;
+
 }
