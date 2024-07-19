@@ -76,3 +76,7 @@ ANOTAÇÕES
  #### select
 
 # Grouping tags
+
+# sombras de caixa 
+ border-box para ta criando sobreamento
+ insert para sombrear por fora

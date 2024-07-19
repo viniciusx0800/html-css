@@ -1,28 +1,186 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grouping tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(233, 104, 53);
+            margin: 20px;
+            border: black;
+            padding: 20px 20px 40px 20px;
+        } 
+            
+        header{
+            background-color: rgb(236, 104, 42);
+            padding: 20px;
+            margin: 10px;
+            font-family: ;
+            font-style: normal;
+            font-size: large;
+        }
+
+        input{
+            border-radius: 20px;
+            width: 600px;
+            height: 26px;
+            
+        }
+        h1{
+            
+            color: rgb(230, 238, 236);
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        #assuntos{
+            background-color: rgb(39, 37, 37);
+            color: aliceblue;    
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin: 10px;
+            padding: 1px;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        nav{
+            /* background-color: rgb(228, 121, 71); */
+            /* display: inline-block; 
+            border: solid black; 
+            text-align: center;
+             height: 200px;
+             width: 100px;  */
+        }
+
+        nav > a{
+            text-decoration: none;
+            color: rgb(254, 255, 255);
+            font-weight: bold;
+            margin-right:  30px;
+        }
+
+        #home{
+            background-color: rgb(231, 103, 44);
+            display: block;
+            /* border: solid black; */
+            text-align: center ;
+            height: 20px;
+            width: 100px;
+            box-shadow: 2px 2px 4px 1px rgba(5, 5, 5, 0.534);
+        }
+
+        #login{
+            background-color: rgb(231, 103, 44);
+            /* display: inline-block; */
+            /* border: solid black; */
+            text-align: center ;
+            height: 20px;
+            width: 100px;
+        }
+
+        #config{
+            background-color: rgb(231, 103, 44);
+            /* display: inline-block; */
+            /* border: solid black; */
+            text-align: center ;
+            height: 20px;
+            width: 100px;
+        }
+
+        #ajuste{
+            background-color: rgb(231, 103, 44);
+            /* display: inline-block; */
+            /* border: solid black; */
+            text-align: center ;
+            height: 20px;
+            width: 100px;
+        }
+
+        #status{
+            background-color: rgb(231, 103, 44);
+            /* display: inline-block; */
+            /* border: solid black; */
+            text-align: center ;
+            height: 20px;
+            width: 100px;''
+        }
+        nav > a:hover{
+            text-decoration: underline;
+            background-color: aqua;
+        }
+
+        #home:hover{
+            background-color: aqua;
+        }
+        #login:hover{
+            background-color: aqua;
+        }
+        #config:hover{
+            background-color: aqua;
+        }
+        #ajuste:hover{
+            background-color: aqua;
+        }
+        #status:hover{
+            background-color: aqua;
+        }
+        main{
+           background-color: aliceblue;
+           padding: 10px;
+           margin: 10px; 
+           border-radius: 10px 0px;
+        }
+
+        article{
+            background-color: lightgray;
+            padding: 5px;
+        }
+
+        article > aside{
+            background-color: rgb(54, 54, 54);
+        }
+
+        footer{
+         background-color: rgb(59, 97, 221);
+         color: rgb(251, 249, 252);   
+         text-align: center;
+         padding: 5px;
+         border-radius: 20px;
+
+        }
+        footer > p{
+            margin: 0px;
+        }
+
+        #bola{
+            margin: 0px;
+            height: 100px;
+            width: 100px;
+            background-color:  black;
+            border-radius: 60px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Meu site</h1>
+        <h1>RENOVA</h1>
         <nav>
-         <a href="@">link</a>
-         <a href="@">link</a>
-         <a href="@">link</a>
-         <a href="@">link</a>
-         <a href="@">link</a>
+         <nav id="home"><a href="https://renova.net.br/site/">HOME</a></nav>
+         <nav id="login"><a href="@">Login</a></nav>
+         <nav id="config"><a href="@">Config</a></nav>
+         <nav id="ajuste"><a href="@">ajuste</a></nav>
+         <nav id="status"><a href="@">Status</a></nav>
         </nav>
     </header>
+    <input type="tel">
     <main>
         <section id="assuntos">
-
+            <p>Esportes Política Tecnologia</p>
         </section>
-        <section id="notícias">
+        <section id="noticias">
             <article>
-                <h2>notícias so o Brasil</h2>
+                <h2>notícias do o Brasil</h2>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates quo repudiandae numquam optio cupiditate dicta deserunt exercitationem, tenetur doloribus ex quod, quisquam explicabo quas quis maiores, quaerat officia atque aliquid.</p>
                 <aside>
                     <p>Escrito por Gustavo guanabara</p>
@@ -34,7 +192,8 @@
         </section>
     </main>
     <footer>
-        <p>Desenvolvido durante uma aula</p>
+        <p>Desenvolvido por curso em video</p>
     </footer>
+    <div id="bola"></div>
 </body>
 </html>
