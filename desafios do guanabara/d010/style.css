@@ -1,0 +1,34 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+font-face{
+    font-family: 'android';
+    src: url(fontes/idroid.otf) format('opentype') ;
+    font-weight: normal;
+}
+
+
+:rost{
+ --cor0:#c5edb6;
+ --cor1:#83e1ad;
+ --cor2:#3ddc84;
+ --cor3:#2fa856;
+ --cor4:#1a5c37;
+ --cor5:#063d1e;
+
+ --font-padrão: Arial, Verdana, Helvetica, sans-serif;
+ --font-destaque: Babas Neue, Cursive;
+}
+
+
+body{
+    background-color: #a3e4c0;
+}
+
+header > h1{
+    color: #2fa856;
+}
+
+ h2{
+    color: #1a5c37;
+}
