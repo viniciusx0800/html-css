@@ -1,9 +1,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Protest+Guerrilla&display=swap');
 font-face{
     font-family: 'android';
-    src: url(fontes/idroid.otf) format('opentype') ;
+    src: url('../d010/fontes/IDroid.otf') format('opentype') ;
     font-weight: normal;
 }
 
@@ -17,18 +17,176 @@ font-face{
  --cor5:#063d1e;
 
  --font-padrão: Arial, Verdana, Helvetica, sans-serif;
- --font-destaque: Babas Neue, Cursive;
+ --fonte-destaque:'Bebas Neue', cursive;
+ --fonte-android:'android', cursive;
 }
 
+*{
+    margin: 0px;
+    padding: 0px;
+}
 
 body{
     background-color: #a3e4c0;
+    font-family:  Arial, Verdana, Helvetica, sans-serif;
+}
+
+a.externo::after{
+    content: '\00A0\1F517';
+}
+
+header{
+    background-image: linear-gradient(to bottom, #2fa856, #1a5c37, #063d1e);
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
 }
 
 header > h1{
-    color: #2fa856;
+    color: #f9fcfa;
+    font-family:'Bebas Neue', cursive;
+    margin-bottom: 20px;
+    font-size: 3em;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.616);
+
 }
 
- h2{
-    color: #1a5c37;
+header > p{
+    color: #ffffff;
+    font-family:  Arial, Verdana, Helvetica, sans-serif;
+    font-size: 1.2em;
+    width: 500px;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.616);
+
 }
+
+nav{
+    background-color: #063d1e;
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.521);
+
+}
+nav > a{
+    color: #ffffff;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition-duration: 1s;
+}
+nav > a:hover{
+    background-color: #135a29;
+    color: #063d1e;
+}
+main{
+    background-color: aliceblue;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.644);
+    margin-bottom: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+ 
+
+ h1{
+    color: #266e46;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+    
+}
+
+
+ h2{
+    color: #063d1e;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #1f9143f6;
+    font-size: 1.3em;
+    background-image: linear-gradient(to right, #a6e7c7, transparent);
+    text-indent: 8lpx;
+    
+}
+
+main p{
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 2em;
+    font-size: 1em;
+}
+main strong{
+    color: #10a350;
+    font-size: bold;
+    background-color: #cbe9d981;
+    padding: 2px 8px;
+}
+main a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #1a6841c7;
+    background-color: #60c48d8c;
+    padding: 2px 8px;
+}
+main a:hover{
+    text-decoration: underline;
+    color: #135a29;
+}
+
+img{
+    width: 100%;
+}
+
+.pequena{
+    max-width: 350px;
+    width: 50%;
+    margin: auto;
+    display: block;
+} 
+
+aside{
+    background-color: #81d8a8;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 10px 3px 8px rgba(0, 0, 0, 0.274);
+}
+
+aside > h3{
+    background-color: #1a5c37;
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+aside > ul{
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+}
+
+footer{
+    background-color: #18442e;
+    color: #ffffff;
+    text-align: center;
+    font-size: .8em;
+    padding: 5px;
+
+} 
+
+footer a{
+  color: #ffffff;  
+  font-weight: bold; 
+  text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+    color: #a6e7c7;
+}
+
