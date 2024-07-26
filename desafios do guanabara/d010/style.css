@@ -48,6 +48,7 @@ header > h1{
     margin-bottom: 20px;
     font-size: 3em;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.616);
+    font-weight: normal;
 
 }
 
@@ -55,11 +56,12 @@ header > p{
     color: #ffffff;
     font-family:  Arial, Verdana, Helvetica, sans-serif;
     font-size: 1.2em;
-    width: 500px;
+    width: auto;
     margin: auto;
     padding-left: 10px;
     padding-right: 10px;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.616);
+    margin-bottom: 20px;
 
 }
 
@@ -70,7 +72,7 @@ nav{
 
 }
 nav > a{
-    color: #ffffff;
+    color: #a6e7c7;
     padding: 10px;
     text-decoration: none;
     font-weight: bold;
@@ -78,8 +80,8 @@ nav > a{
     transition-duration: 1s;
 }
 nav > a:hover{
-    background-color: #135a29;
-    color: #063d1e;
+    background-color: #145229;
+    color: #318b57;
 }
 main{
     background-color: aliceblue;
@@ -97,9 +99,9 @@ main{
 
  h1{
     color: #266e46;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-
-    
+    font-family:var(--fonte-android);
+    font-weight: normal;
+    font-size: 1.8em;
 }
 
 
@@ -110,7 +112,7 @@ main{
     font-size: 1.3em;
     background-image: linear-gradient(to right, #a6e7c7, transparent);
     text-indent: 8lpx;
-    
+    font-weight: normal;
 }
 
 main p{
@@ -148,6 +150,22 @@ img{
     margin: auto;
     display: block;
 } 
+
+.youtube > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    height: 90%;
+    width: 90%;
+}
+
+.youtube{
+    background-color: #063d1e;
+    margin: 0px -20px 30px -20px;
+    padding: 30px;
+    padding-bottom: 50%;
+    position: relative;
+}
 
 aside{
     background-color: #81d8a8;
