@@ -9,30 +9,38 @@
     <style>
         body {
             background-color: rgb(0, 0, 0);
-
+            margin: 0;
+            font-family: Arial, sans-serif;
         }
 
         h1 {
             color: rgb(248, 247, 247);
-
+            text-align: center;
+            padding: 16px;
+            margin: 0;
         }
 
-        main{
-            background-color: none;
-            width: 600px;
-            padding: 10px;
-            margin: auto;
+        main {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Two columns */
+            gap: 16px;
+            max-width: 65%; 
+            margin: 0 auto; 
+        }
+
+        img {
+            width: 100%;
         }
     </style>
 </head>
 
 <body>
+    <h1>Vídeos legais</h1>
     <main>
-        <h1>Vídeos legais</h1>
-        <P><a href="pag2.html"><img src="thumb-hardware.png" alt="thumb-hardware" width="360"></a></P>
-        <p><a href="pag3.html"><img src="thumb-html.png" alt="thumb-html" width="360"></a></p>
-        <p><a href="pag4.html"><img src="thumb-python.png" alt="thumb-python" width="360"></a></p>
-        <p><a href="pag5.html"><img src="thumb-js.png" alt="thumb-js" width="360"></a></p>
+        <p><a href="pag2.html"><img src="thumb-hardware.png" alt="thumb-hardware"></a></p>
+        <p><a href="pag3.html"><img src="thumb-html.png" alt="thumb-html"></a></p>
+        <p><a href="pag4.html"><img src="thumb-python.png" alt="thumb-python"></a></p>
+        <p><a href="pag5.html"><img src="thumb-js.png" alt="thumb-js"></a></p>
     </main>    
 </body>
 </html>
