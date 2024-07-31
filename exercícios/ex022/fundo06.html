@@ -7,15 +7,23 @@
     <style>
         body {
             height: 100vh;
-            background-color: black;
+          /* background-color: black;
             background-image: url('image/wallpaper002.jpg');
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
+            background-repeat: repeat-y;
+            background-attachment: fixed; */
 
-            /* Shorthand - background 
-                color > image > position > repeat > [size] > attachment
+            /* shorthand -  background 
+            ordem a ser seguida
+            color > image > position > repeat > [size] > attachment
+            essa shorthand esta fucionando exeto o size!
             */
+
+            background: black url('image/wallpaper002.jpg')  center center 
+            no-repeat  fixed;
+            background-size: cover;
 
         }
 
