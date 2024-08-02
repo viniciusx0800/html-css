@@ -1,6 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root{
+    --fonte1: verdana, Genava, tahoma, sans-serif;
+}
+
 *{
     margin: 0px;
     padding: 0px;
+    font-family: verdana, Genava, tahoma, sans-serif;
+};
 }
 html, body{
     min-height: 100vh;
