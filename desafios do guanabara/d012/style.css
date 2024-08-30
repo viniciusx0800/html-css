@@ -10,6 +10,7 @@
     margin: 0px;
     padding: 0px;
     font-family: verdana, Genava, tahoma, sans-serif;
+    font-size: 1em;
 };
 
 html, body{
@@ -22,17 +23,21 @@ header{
     background-color: black;
     color: aliceblue;
     text-align: center;
+    
 }
  
 header > h1{
     padding-top: 50px;
     font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 8vh;
     /* text-transform: 
     uppercase; para deixar maisculo */
 }
 
 header > p{
     padding-bottom: 50px;
+    font-family: "Sriracha", cursive;
 }
 
 a{
@@ -50,6 +55,8 @@ section{
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: "Sriracha", cursive;
+    font-size: 3.5vh;
 }
 
 section.normal{
@@ -58,13 +65,17 @@ section.normal{
 }
 
 section.imagem{
+    display: inline-block;
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.658);
     color: white;
+    
 }
 
 section.imagem > p{
     width: 400px;
     background-color: rgba(0, 0, 0, 0.26);
+    font-family: "Sriracha", cursive;
 }
 
 footer{
