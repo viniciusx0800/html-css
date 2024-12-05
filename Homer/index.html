@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homer Simpson - CSS</title>
+  <style>
+    body {
+      background-color: #f7f7f7;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .homer {
+      position: relative;
+      width: 200px;
+      height: 400px;
+      background-color: #f3c9b6;
+      border-radius: 50% 50% 40% 40%;
+      overflow: hidden;
+    }
+
+    .homer .eyes {
+      position: absolute;
+      top: 100px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      justify-content: space-around;
+      width: 120px;
+    }
+
+    .eye {
+      width: 40px;
+      height: 40px;
+      background-color: white;
+      border-radius: 50%;
+      position: relative;
+    }
+
+    .eye-left {
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .pupil {
+      width: 15px;
+      height: 15px;
+      background-color: black;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .mouth {
+      position: absolute;
+      top: 200px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 120px;
+      height: 50px;
+      border-bottom-left-radius: 60px;
+      border-bottom-right-radius: 60px;
+      background-color: #f2a1a1;
+    }
+
+    .mouth::before {
+      content: '';
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      width: 30px;
+      height: 20px;
+      background-color: white;
+      border-radius: 50%;
+      transform: translateX(-50%);
+    }
+
+    .hair {
+      position: absolute;
+      top: 20px;
+      left: 30%;
+      width: 40%;
+      height: 40px;
+      background-color: #000;
+      border-radius: 50%;
+    }
+
+    .hair::before {
+      content: '';
+      position: absolute;
+      top: 5px;
+      left: 50%;
+      width: 30px;
+      height: 15px;
+      background-color: #000;
+      border-radius: 50%;
+      transform: translateX(-50%);
+    }
+
+    .ears {
+      position: absolute;
+      top: 120px;
+      width: 40px;
+      height: 60px;
+      background-color: #f3c9b6;
+      border-radius: 50%;
+    }
+
+    .ears-left {
+      left: -25px;
+    }
+
+    .ears-right {
+      right: -25px;
+    }
+
+    .mouth-open {
+      background-color: #ffcccc;
+    }
+  </style>
+</head>
+<body>
+  <div class="homer">
+    <div class="eyes">
+      <div class="eye eye-left">
+        <div class="pupil"></div>
+      </div>
+      <div class="eye">
+        <div class="pupil"></div>
+      </div>
+    </div>
+    <div class="mouth"></div>
+    <div class="hair"></div>
+    <div class="ears ears-left"></div>
+    <div class="ears ears-right"></div>
+  </div>
+</body>
+</html>
